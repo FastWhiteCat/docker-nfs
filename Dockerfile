@@ -1,5 +1,5 @@
-FROM ubuntu
-ENV DEBIAN_FRONTEND noninteractive
+FROM ubuntu:16.04
+
 RUN apt-get update -qq && apt-get install -y nfs-kernel-server runit inotify-tools -qq
 RUN mkdir -p /exports
 
