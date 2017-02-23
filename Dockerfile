@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-RUN apt-get update -qq && apt-get install -y nfs-kernel-server runit inotify-tools -qq
+RUN apt-get update -qq && apt-get install -y nfs-kernel-server runit inotify-tools -qq jpegoptim
 RUN mkdir -p /exports
 
 RUN mkdir -p /etc/sv/nfs
