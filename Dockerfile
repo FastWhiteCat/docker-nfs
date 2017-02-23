@@ -18,7 +18,7 @@ RUN chmod +x /usr/local/bin/nfs_setup
 #                                    COMPRESS IMAGES CONF
 ###############################################################################
 
-ADD ./compress.sh /usr/local/bin/compress-images.sh
+ADD ./compress-images.sh /usr/local/bin/compress-images.sh
 RUN chmod +x /usr/local/bin/compress-images.sh
 
 VOLUME /exports
